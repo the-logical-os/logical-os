@@ -15,9 +15,37 @@
 <img src="Frame%2021.svg" alt="">
 
 <img src="Frame%2022.svg" alt="">
+
+`these badges doesn't work yet btw`
     
 </div>
+
+<br />
+<br />
+<br />
+
 
 **What is this?**
 
 - Illogical Impulse-based OS || Fedora Remix with best hyprland rice ever preinstalled
+- Good option if you want to use Fedora with end-4's dotfiles
+
+**What you receive?**
+
+- Simpler graphical installation - no scripts or commands required
+- A user-friendly yet powerful system ready for any workload
+
+### Build ISO
+
+```bash
+git clone https://github.com/fb24m/logical-os && cd logical-os
+# build additional local repo
+./download_deps.sh
+
+# build iso (from scratch)
+./build.sh
+```
+
+### Credits
+
+[@end-4](https://github.com/end-4) and all illogical-impulse [contributors](https://github.com/end-4/dots-hyprland/graphs/contributors?from=2%2F28%2F2026)
