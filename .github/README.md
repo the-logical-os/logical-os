@@ -17,12 +17,13 @@
 <img src="Frame%2022.svg" alt="">
 
 `these badges doesn't work yet btw`
+
+`Logical OS uses illogical impulse. This may seem illogical. At first glance`
     
 </div>
 
-<br />
-<br />
-<br />
+
+
 
 
 **What is this?**
