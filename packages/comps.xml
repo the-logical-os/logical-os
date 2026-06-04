@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE comps PUBLIC '-//Red Hat, Inc.//DTD Comps info//EN' 'comps.dtd'>
+<comps>
+  <group>
+    <id>core</id>
+    <name>Core</name>
+    <description>Smallest possible installation</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">audit</packagereq>
+      <packagereq type="mandatory">bash</packagereq>
+      <packagereq type="mandatory">coreutils</packagereq>
+      <packagereq type="mandatory">curl</packagereq>
+      <packagereq type="mandatory">dnf5</packagereq>
+      <packagereq type="mandatory">e2fsprogs</packagereq>
+      <packagereq type="mandatory">filesystem</packagereq>
+      <packagereq type="mandatory">glibc</packagereq>
+      <packagereq type="mandatory">hostname</packagereq>
+      <packagereq type="mandatory">iproute</packagereq>
+      <packagereq type="mandatory">iputils</packagereq>
+      <packagereq type="mandatory">kbd</packagereq>
+      <packagereq type="mandatory">kernel</packagereq>
+      <packagereq type="mandatory">kernel-core</packagereq>
+      <packagereq type="mandatory">kernel-modules</packagereq>
+      <packagereq type="mandatory">less</packagereq>
+      <packagereq type="mandatory">man-db</packagereq>
+      <packagereq type="mandatory">ncurses</packagereq>
+      <packagereq type="mandatory">openssh-clients</packagereq>
+      <packagereq type="mandatory">openssh-server</packagereq>
+      <packagereq type="mandatory">parted</packagereq>
+      <packagereq type="mandatory">policycoreutils</packagereq>
+      <packagereq type="mandatory">procps-ng</packagereq>
+      <packagereq type="mandatory">rootfiles</packagereq>
+      <packagereq type="mandatory">rpm</packagereq>
+      <packagereq type="mandatory">selinux-policy-targeted</packagereq>
+      <packagereq type="mandatory">setup</packagereq>
+      <packagereq type="mandatory">shadow-utils</packagereq>
+      <packagereq type="mandatory">sssd-common</packagereq>
+      <packagereq type="mandatory">sssd-kcm</packagereq>
+      <packagereq type="mandatory">sudo</packagereq>
+      <packagereq type="mandatory">systemd</packagereq>
+      <packagereq type="mandatory">util-linux</packagereq>
+      <packagereq type="mandatory">vim-minimal</packagereq>
+      <packagereq type="default">NetworkManager</packagereq>
+      <packagereq type="default">dnf5-plugins</packagereq>
+      <packagereq type="default">dracut-config-rescue</packagereq>
+      <packagereq type="default">firewalld</packagereq>
+      <packagereq type="default">fwupd</packagereq>
+      <packagereq type="default">plymouth</packagereq>
+      <packagereq type="default">plymouth-plugin-two-step</packagereq>
+      <packagereq type="default">prefixdevname</packagereq>
+      <packagereq type="default">systemd-resolved</packagereq>
+      <packagereq type="default">zram-generator-defaults</packagereq>
+      <packagereq type="optional">dracut-config-generic</packagereq>
+      <packagereq type="optional">initial-setup</packagereq>
+      <packagereq type="optional">initscripts</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>sound</id>
+    <name>Sound</name>
+    <description>For sound and equalizers</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">cava</packagereq>
+      <packagereq type="mandatory">pavucontrol</packagereq>
+      <packagereq type="mandatory">wireplumber</packagereq>
+      <packagereq type="mandatory">libdbusmenu-gtk3-devel</packagereq>
+      <packagereq type="mandatory">playerctl</packagereq>
+    </packagelist>
+  </group>
+
+
+  <group>
+    <id>additional</id>
+    <name>Additional libraries</name>
+    <description>System utils and ctls</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">geoclue2</packagereq>
+      <packagereq type="mandatory">brightnessctl</packagereq>
+      <packagereq type="mandatory">ddcutil</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>ii-basic</id>
+    <name>Basic</name>
+    <description>Basic packages for Illogical Impulse</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">bc</packagereq>
+      <packagereq type="mandatory">coreutils</packagereq>
+      <packagereq type="mandatory">cliphist</packagereq>
+      <packagereq type="mandatory">cmake</packagereq>
+      <packagereq type="mandatory">curl</packagereq>
+      <packagereq type="mandatory">wget2</packagereq>
+      <packagereq type="mandatory">ripgrep</packagereq>
+      <packagereq type="mandatory">jq</packagereq>
+      <packagereq type="mandatory">rsync</packagereq>
+      <packagereq type="mandatory">yq</packagereq>
+      <packagereq type="mandatory">unzip</packagereq>
+      <packagereq type="mandatory">fastfetch</packagereq>
+      <packagereq type="mandatory">gnome-keyring-pam</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>fonts-and-themes</id>
+    <name>Fonts and themes</name>
+    <description>Fonts and themes for Illogical Impulse</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+     <packagereq type="mandatory">bibata-cursor-theme</packagereq>
+     <packagereq type="mandatory">adw-gtk3-theme</packagereq>
+     <packagereq type="mandatory">breeze-cursor-theme</packagereq>
+     <packagereq type="mandatory">grub2-breeze-theme</packagereq>
+     <packagereq type="mandatory">breeze-icon-theme</packagereq>
+     <packagereq type="mandatory">breeze-icon-theme-fedora</packagereq>
+     <packagereq type="mandatory">kf6-breeze-icons</packagereq>
+     <packagereq type="mandatory">sddm</packagereq>
+     <packagereq type="mandatory">breeze-plus-icon-theme</packagereq>
+     <packagereq type="mandatory">darkly</packagereq>
+     <packagereq type="mandatory">eza</packagereq>
+     <packagereq type="mandatory">fish</packagereq>
+     <packagereq type="mandatory">fontconfig</packagereq>
+     <packagereq type="mandatory">kitty</packagereq>
+     <packagereq
+                type="mandatory"
+            >florian-karsten-space-grotesk-fonts</packagereq>
+     <packagereq type="mandatory">starship</packagereq>
+     <packagereq type="mandatory">jetbrains-mono-nerd-fonts</packagereq>
+     <packagereq
+                type="mandatory"
+            >google-material-symbols-vf-rounded-fonts</packagereq>
+     <packagereq type="mandatory">material-icons-fonts</packagereq>
+     <packagereq type="mandatory">readex-pro-fonts-all</packagereq>
+     <packagereq type="mandatory">google-rubik-vf-fonts</packagereq>
+     <packagereq type="mandatory">twitter-twemoji-fonts</packagereq>
+     <packagereq type="mandatory">google-sans-flex-vf-fonts</packagereq>
+    </packagelist>
+  </group>
+
+
+  <group>
+    <id>hyprland</id>
+    <name>Hyprland</name>
+    <description>Modern compositor with the looks</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+     <packagereq type="mandatory">hyprland</packagereq>
+     <packagereq type="mandatory">hyprland-guiutils</packagereq>
+     <packagereq type="mandatory">hyprland-qt-support</packagereq>
+     <packagereq type="mandatory">hyprsunset</packagereq>
+     <packagereq type="mandatory">wl-clipboard</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>kde</id>
+    <name>KDE</name>
+    <description>KDE-related packages</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+        <packagereq type="mandatory">bluedevil</packagereq>
+        <packagereq type="mandatory">gnome-keyring</packagereq>
+        <packagereq type="mandatory">NetworkManager</packagereq>
+        <packagereq type="mandatory">NetworkManager-wifi</packagereq>
+        <packagereq type="mandatory">plasma-nm</packagereq>
+        <packagereq type="mandatory">polkit-kde</packagereq>
+        <packagereq type="mandatory">plasma-systemsettings</packagereq>
+        <packagereq type="mandatory">microtex</packagereq>
+        <packagereq type="mandatory">plasma-integration-qt5</packagereq>
+        <packagereq type="mandatory">plasma-integration</packagereq>
+        <packagereq type="mandatory">qt5-qtbase-gui</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>python</id>
+    <name>Python</name>
+    <description>No description</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+        <packagereq type="mandatory">clang</packagereq>
+        <packagereq type="mandatory">uv</packagereq>
+        <packagereq type="mandatory">gtk4-devel</packagereq>
+        <packagereq type="mandatory">libadwaita-devel</packagereq>
+        <packagereq type="mandatory">libsoup3-devel</packagereq>
+        <packagereq type="mandatory">libportal-gtk4</packagereq>
+        <packagereq type="mandatory">gobject-introspection-devel</packagereq>
+        <packagereq type="mandatory">python3</packagereq>
+        <packagereq type="mandatory">python3.12</packagereq>
+        <packagereq type="mandatory">python3-devel</packagereq>
+        <packagereq type="mandatory">python3.12-devel</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>screencapture</id>
+    <name>Screen Capture</name>
+    <description>No description</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+        <packagereq type="mandatory">hyprshot</packagereq>
+        <packagereq type="mandatory">slurp</packagereq>
+        <packagereq type="mandatory">swappy</packagereq>
+        <packagereq type="mandatory">tesseract</packagereq>
+        <packagereq type="mandatory">tesseract-langpack-eng</packagereq>
+        <packagereq type="mandatory">tesseract-langpack-chi_sim</packagereq>
+        <packagereq type="mandatory">wf-recorder</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>toolkit</id>
+    <name>Toolkit</name>
+    <description>No description</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+        <packagereq type="mandatory">upower</packagereq>
+        <packagereq type="mandatory">wtype</packagereq>
+        <packagereq type="mandatory">ydotool</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>quickshell</id>
+    <name>QuickShell</name>
+    <description>QuickShell and its dependencies</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+        <packagereq type="mandatory">quickshell-git</packagereq>
+        <packagereq type="mandatory">qt6-qtdeclarative</packagereq>
+        <packagereq type="mandatory">qt6-qtbase</packagereq>
+        <packagereq type="mandatory">jemalloc</packagereq>
+        <packagereq type="mandatory">qt6-qtsvg</packagereq>
+        <packagereq type="mandatory">pipewire-libs</packagereq>
+        <packagereq type="mandatory">libxcb</packagereq>
+        <packagereq type="mandatory">wayland-devel</packagereq>
+        <packagereq type="mandatory">qt6-qtwayland</packagereq>
+        <packagereq type="mandatory">qt5-qtwayland</packagereq>
+        <packagereq type="mandatory">libdrm</packagereq>
+        <packagereq type="mandatory">breakpad</packagereq>
+        <packagereq type="mandatory">kf6-kirigami</packagereq>
+        <packagereq type="mandatory">libunwind-devel</packagereq>
+        <packagereq type="mandatory">qt6-qt5compat</packagereq>
+        <packagereq type="mandatory">qt6-qtimageformats</packagereq>
+        <packagereq type="mandatory">qt6-qtpositioning</packagereq>
+        <packagereq type="mandatory">qt6-qtquicktimeline</packagereq>
+        <packagereq type="mandatory">qt6-qtsensors</packagereq>
+        <packagereq type="mandatory">qt6-qttools</packagereq>
+        <packagereq type="mandatory">qt6-qttranslations</packagereq>
+        <packagereq type="mandatory">qt6-qtvirtualkeyboard</packagereq>
+        <packagereq type="mandatory">kdialog</packagereq>
+        <packagereq type="mandatory">kf6-syntax-highlighting</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>widgets</id>
+    <name>Widgets</name>
+    <description>No description</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+        <packagereq type="mandatory">fuzzel</packagereq>
+        <packagereq type="mandatory">glib2</packagereq>
+        <packagereq type="mandatory">ImageMagick</packagereq>
+        <packagereq type="mandatory">hypridle</packagereq>
+        <packagereq type="mandatory">hyprlock</packagereq>
+        <packagereq type="mandatory">hyprpicker</packagereq>
+        <packagereq type="mandatory">songrec</packagereq>
+        <packagereq type="mandatory">translate-shell</packagereq>
+        <packagereq type="mandatory">qalculate</packagereq>
+        <packagereq type="mandatory">wlogout</packagereq>
+        <packagereq type="mandatory">matugen</packagereq>
+        <packagereq type="mandatory">mpvpaper</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>utilities</id>
+    <name>Utilities</name>
+    <description>Useful CLI tools</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+        <packagereq type="mandatory">bat</packagereq>
+        <packagereq type="mandatory">du-dust</packagereq>
+        <packagereq type="mandatory">trash-cli</packagereq>
+        <packagereq type="mandatory">eza</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>plasma-toolkit</id>
+    <name>KDE basic apps</name>
+    <description
+        >KDE apps are default in illogical-impulse. They're more functional, but can feel cluttered</description>
+    <default>true</default>
+    <uservisible>true</uservisible>
+    <packagelist>
+        <packagereq type="mandatory">dolphin</packagereq>
+        <packagereq type="mandatory">kate</packagereq>
+        <packagereq type="mandatory">haruna</packagereq>
+        <packagereq type="mandatory">gwenview</packagereq>
+        <packagereq type="mandatory">okular</packagereq>
+        <packagereq type="mandatory">kcalc</packagereq>
+        <packagereq type="mandatory">elisa</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
+    <id>gnome-toolkit</id>
+    <name>GTK basic apps</name>
+    <description
+        >GTK apps has less dependencies and looks better with custom theme, but may feel more restrictive</description>
+    <default>false</default>
+    <uservisible>true</uservisible>
+    <packagelist>
+        <packagereq type="mandatory">nautilus</packagereq>
+        <packagereq type="mandatory">showtime</packagereq>
+        <packagereq type="mandatory">evince</packagereq>
+        <packagereq type="mandatory">papers</packagereq>
+        <packagereq type="mandatory">gnome-calculator</packagereq>
+        <packagereq type="mandatory">gnome-text-editor</packagereq>
+        <packagereq type="mandatory">g4music</packagereq>
+        <packagereq type="mandatory">gnome-system-monitor</packagereq>
+    </packagelist>
+  </group>
+
+  <environment>
+    <id>illogical-impulse</id>
+    <name>Illogical Impulse</name>
+    <description>Hyprland Illogical Impulse shell (by end-4).</description>
+    <uservisible>true</uservisible>
+
+    <grouplist>
+        <groupid>core</groupid>
+        <groupid>sound</groupid>
+        <groupid>additional</groupid>
+        <groupid>ii-basic</groupid>
+        <groupid>fonts-and-themes</groupid>
+        <groupid>hyprland</groupid>
+        <groupid>kde</groupid>
+        <groupid>python</groupid>
+        <groupid>screencapture</groupid>
+        <groupid>toolkit</groupid>
+        <groupid>widgets</groupid>
+        <groupid>quickshell</groupid>
+        <groupid>utilities</groupid>
+    </grouplist>
+
+    <optionlist>
+        <groupid>plasma-toolkit</groupid>
+        <groupid>gnome-toolkit</groupid>
+    </optionlist>
+  </environment>
+</comps>

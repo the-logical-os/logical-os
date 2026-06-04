@@ -1,0 +1,68 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "/etc/fastfetch/logical_os.txt",
+    "padding": {
+        "right": 0
+    },
+    "color": {
+        "1": "#DFE4DD",
+        "2": "#DFE4DD"
+    }
+  },
+  "display": {
+    "separator": " ",
+    "key": {
+      "width": 4,
+      "type": "string"
+    },
+    "color": {
+        "keys": "#DFE4DD",
+        "title": "#DFE4DD",
+        "output": "#DFE4DD"
+    },
+    "bar": {
+        "width": 10,       // Width of percentage bars
+        "char.elapsed": "■", // Character for elapsed portion
+        "char.total": " ",   // Character for total portion
+        "border.left": "",
+        "border.right": "",
+    },
+    "percent": {
+        "type": 2,         // 1=number, 2=bar, 3=both, 9=colored number
+        "color": {
+            "green": "#DFE4DD",
+            "yellow": "#DFE4DD",
+            "red": "#DFE4DD"
+        }
+    }
+  },
+  "modules": [
+   // "break",    
+    "break",
+    "title",
+    {
+      "type": "os",
+      "key": ""
+    },
+    // "host",
+    { "type": "kernel", "key": "" },
+    { "type": "uptime", "key": "󱑂" },
+    { "type": "packages", "key": "󰏔" },
+    // { "type": "shell", "key": "" },
+    { "type": "display", "key": "󰇄" },
+    { "type": "de", "key": "" },
+    { "type": "wm", "key": "" },
+    { "type": "wmtheme", "key": "󱑂" },
+    { "type": "uptime", "key": "󱑂" },
+    { "type": "theme", "key": "󱑂" },
+    { "type": "icons", "key": "󱑂" },
+    { "type": "font", "key": "󱑂" },
+    { "type": "cpu", "key": "", "format": "{1}" },
+    { "type": "gpu", "key": "", "format": "{2}" },
+    { "type": "memory", "key": "", "format": "{1} {4} {2}" },
+    { "type": "disk", "key": "", "format": "{1} {13} {2}" },
+    { "type": "battery", "key": "󱑂" },
+    { "type": "poweradapter", "key": "󱑂" }
+  ]
+}
