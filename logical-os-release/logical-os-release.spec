@@ -69,6 +69,7 @@ Source28:       longer-default-shutdown-timeout.conf
 Source29:       org.gnome.settings-daemon.plugins.power.gschema.override
 Source31:       20-fedora-defaults.conf
 Source32:       75-eln.preset
+Source100:      100-logical-os.conf
 
 BuildArch:      noarch
 
@@ -206,6 +207,7 @@ VERSION_CODENAME=""
 PRETTY_NAME="Logical OS %{dist_version} (%{release_name}%{?prerelease})"
 ANSI_COLOR="0;38;2;60;110;180"
 LOGO=fedora-logo-icon
+VARIANT_ID=logical
 CPE_NAME="cpe:/o:fedoraproject:fedora:%{dist_version}"
 DEFAULT_HOSTNAME="logicalos"
 HOME_URL="%{dist_home_url}"
@@ -270,6 +272,10 @@ cat >> %{buildroot}%{_rpmconfigdir}/macros.d/macros.dist << EOF
 %%dist_debuginfod_url %{dist_debuginfod_url}
 EOF
 
+# Add logical-os treeinfo
+install -Dm0644 %{SOURCE100} \
+    %{buildroot}%{_sysconfdir}/anaconda/profile.d/logical-os.conf
+
 # Install licenses
 install -pm 0644 %{SOURCE1} licenses/LICENSE
 
@@ -317,6 +323,10 @@ install -Dm0644 %{SOURCE31} -t %{buildroot}%{_prefix}/share/dnf5/libdnf.conf.d/
 %dir %{_sysconfdir}/swid
 %{_sysconfdir}/swid/swidtags.d
 %{_prefix}/share/dnf5/libdnf.conf.d/20-fedora-defaults.conf
+
+%dir %{_sysconfdir}/anaconda
+%dir %{_sysconfdir}/anaconda/profile.d
+%{_sysconfdir}/anaconda/profile.d/logical-os.conf
 
 %files
 %files identity-basic

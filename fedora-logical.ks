@@ -12,9 +12,7 @@ keyboard us
 lang en_US.UTF-8
 reboot
 
-bootloader --location=mbr
-
-clearpart --all --initlabel --disklabel=gpt
+autopart --type=btrfs
 
 %packages
 shim-x64

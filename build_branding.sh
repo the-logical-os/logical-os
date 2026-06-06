@@ -29,3 +29,5 @@ gpgcheck=0
 EOF
 
 sudo cp /tmp/local.repo /etc/yum.repos.d/logical-branding.repo
+
+cp ~/rpmbuild/RPMS/noarch/* ./packages/
