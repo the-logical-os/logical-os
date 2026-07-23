@@ -24,7 +24,7 @@
 **STATUS: VERY ALPHA.** NOT AFFILIATED with Fedora or Red Hat
 
 
-- Illogical Impulse-based OS || Fedora Remix with best hyprland rice ever preinstalled
+- Illogical Impulse-based OS || Fedora Remix with illogical-impulse preinstalled
 - Simpler graphical installation - no scripts or commands required
 - A user-friendly yet powerful system ready for any workload
 - KDE/GTK apps installation option
