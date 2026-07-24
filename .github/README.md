@@ -18,11 +18,10 @@
 `these badges doesn't work yet btw`
 
 `Logical OS uses illogical impulse. This may seem illogical. At first glance`
-    
+
 </div>
 
 **STATUS: VERY ALPHA.** NOT AFFILIATED with Fedora or Red Hat
-
 
 - Illogical Impulse-based OS || Fedora Remix with illogical-impulse preinstalled
 - Simpler graphical installation - no scripts or commands required
@@ -32,15 +31,17 @@
 
 ### Build ISO
 
+#### Prerequisites
+
+- Fedora (Fedora 44 is recommended)
+- The [logical-os](https://github.com/the-logical-os/logical-os) repository must be enabled
+
+#### Building
+
 ```bash
 git clone https://github.com/fb24m/logical-os && cd logical-os
 
-# build branding packages (delete the ~/rpmbuild directory before running this)
-./build_branding.sh
-
-cp ~/rpmbuild/RPMS/noarch/* ./packages/
-
-# build additional local repo
+# download dependencies to local repo
 ./download_deps.sh
 
 # build iso (from scratch)
