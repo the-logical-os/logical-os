@@ -27,7 +27,7 @@ sudo lorax \
     --volid="LogicalOS-44" \
     --version=44 \
     --release=44 \
-    --source=https://mirror.yandex.ru/fedora/linux/releases/44/Everything/x86_64/os/ \
+    --source=https://mirror.cpsc.ucalgary.ca/mirror/fedora/linux/releases/44/Everything/x86_64/os/ \
     --source=https://the-logical-os.github.io/repo-release \
     "$build_path"
 
