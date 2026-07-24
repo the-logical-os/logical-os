@@ -59,6 +59,20 @@
   </group>
 
   <group>
+    <id>logical</id>
+    <name>Logical OS</name>
+    <description>Logical OS custom dependencies</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">plymouth-theme-logical-os</packagereq>
+      <packagereq type="mandatory">ii-sddm-theme</packagereq>
+      <packagereq type="mandatory">logical-cli</packagereq>
+      <packagereq type="mandatory">matugen-dropin</packagereq>
+    </packagelist>
+  </group>
+
+  <group>
     <id>sound</id>
     <name>Sound</name>
     <description>For sound and equalizers</description>
@@ -132,13 +146,13 @@
      <packagereq type="mandatory">fontconfig</packagereq>
      <packagereq type="mandatory">kitty</packagereq>
      <packagereq
-                type="mandatory"
-            >florian-karsten-space-grotesk-fonts</packagereq>
+        type="mandatory"
+      >florian-karsten-space-grotesk-fonts</packagereq>
      <packagereq type="mandatory">starship</packagereq>
      <packagereq type="mandatory">jetbrains-mono-nerd-fonts</packagereq>
      <packagereq
-                type="mandatory"
-            >google-material-symbols-vf-rounded-fonts</packagereq>
+        type="mandatory"
+      >google-material-symbols-vf-rounded-fonts</packagereq>
      <packagereq type="mandatory">material-icons-fonts</packagereq>
      <packagereq type="mandatory">readex-pro-fonts-all</packagereq>
      <packagereq type="mandatory">google-rubik-vf-fonts</packagereq>
@@ -309,7 +323,7 @@
     <id>plasma-toolkit</id>
     <name>KDE basic apps</name>
     <description
-        >KDE apps are default in illogical-impulse. They're more functional, but can feel cluttered</description>
+    >KDE apps are default in illogical-impulse. They're more functional, but can feel cluttered</description>
     <default>true</default>
     <uservisible>true</uservisible>
     <packagelist>
@@ -327,7 +341,7 @@
     <id>gnome-toolkit</id>
     <name>GTK basic apps</name>
     <description
-        >GTK apps has less dependencies and looks better with custom theme, but may feel more restrictive</description>
+    >GTK apps has less dependencies and looks better with custom theme, but may feel more restrictive</description>
     <default>false</default>
     <uservisible>true</uservisible>
     <packagelist>

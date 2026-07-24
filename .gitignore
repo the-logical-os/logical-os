@@ -13,5 +13,5 @@ build
 
 overlay/etc/skel/.*
 
-dots-hyprland
+dots-hyprland/
 *.iso

@@ -1,5 +1,5 @@
 [logical-os]
 name=Logical OS
-baseurl=https://fb24m.github.io/repo-release/
+baseurl=https://the-logical-os.github.io/repo-release/
 enabled=1
 gpgcheck=0

@@ -9,6 +9,8 @@ cd dots-hyprland
 
 git submodule update --init --recursive
 
+sed -Ei 's/(^|[[:space:]])matugen([[:space:]])/\1matugen-dropin\2/g' dots/.config/quickshell/ii/scripts/colors/switchwall.sh
+
 cd ..
 
 cp -r ./dots-hyprland/dots/. ./overlay/etc/skel/
