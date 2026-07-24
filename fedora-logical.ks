@@ -17,6 +17,7 @@ reboot
 
 %packages
 @^illogical-impulse
+@plasma-toolkit
 
 shim-x64
 grub2-efi-x64
